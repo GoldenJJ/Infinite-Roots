@@ -1,4 +1,4 @@
-def squareroot(root, num, cycles=1000000, precision=0.000000000001):
+def root(root, num, cycles=1000000, precision=0.000000000001):
     guess = num / root
     i = 1
     cycle = 0
@@ -27,4 +27,4 @@ def squareroot(root, num, cycles=1000000, precision=0.000000000001):
 num = int(input("Number to root: "))
 root = int(input("Degree of root: "))
 
-print(f"Root {root} of {num}: {squareroot(root, num)}")
+print(f"Root {root} of {num}: {root(root, num)}")
